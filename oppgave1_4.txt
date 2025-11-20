@@ -1,0 +1,10 @@
+W_E, W_U - dxm
+W_P - dxn_max
+W_O, W_V, W_Q, W_K - kxd
+W_1, W_2 - pxd
+dermed
+n_vekt(L) = L*dim(W_O, W_V, W_Q, W_K, W_1, W_2) +  dim(W_E, W_P, W_U)
+dermed
+n_vekt(L, d, k, p) = L*(4*k*d + 2*p*d) + 2*d*m + d*n_max
+dermed
+n_vekt(L, d, k, p) = d*(L*(4*k + 2*p) + 2*m + n_max)

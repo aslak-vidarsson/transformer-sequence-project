@@ -1,0 +1,6 @@
+Et nettverk av klassen NeuralNetwork vil ha en tilhørende liste av lag av klassen layer og nettverkets step_gd prosedyre utfører step_gd prosedyren til hvert av lag i denne listen, gitt at laget har vekter. Lagene i nettverkets liste har klassen layer, som er en baseklasse, som definerer en prosedyre step_gd. Lagene i nettverket vil være underklasser av klassen layer, og vil dermed arve prosedyren step_gd slik den er definert i layer, gitt at underklassen ikke selv definerer en egen prosedyre step_gd.
+
+Arv vil si at en underklasse av en baseklasse automatisk får funksjoner, prosedyrer og felter, slik de er definert i baseklassen. I noen tilfeller vil baseklassen kun deklarere funksjonen eller prosedyren, men ikke implementere dem, da vil underklassen selv måtte implementere funksjonen eller prosedyren, gitt at den skal brukes i underklassen, siden baseklassen deklarerer at den skal finnes.
+
+Nettverkets step_gd vil altså kalle på lagenes step_gd, gitt at de har parametre, som kan være arvet fra deres baseklasse layer.
+

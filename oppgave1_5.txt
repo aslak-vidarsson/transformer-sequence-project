@@ -1,0 +1,9 @@
+Vi har $n = n_max = 1, m = d = k = p = 2, L = 1$, $W_O = W_V = W_Q = W_1 = W_2 = W_U = I^2$, $\sigma(x) = Relu(x) = max(0, x)$ $W_E = [[1, 0], [0, \alpha]], W_P = [[1], [0]]$ $x = [1]$.
+Dermed $X = onehot(x) = [[0], [1]], z_0 = W_EX+W_P_{0:n} = [[0], [\alpha]]+ [[1], [0]] = [[1], [\alpha]]$ $A(z_0) = Softmax_{col} = [1+\alpha^2] = [1]$
+$z_{1/2} = z_0 + W_O^TW_Vz_0A(z_0) = 2*z_0 = [[2], [2*\alpha]]$
+$z_1 = z_{1/2} + W_2^T\sigma(W_1z_{1/2}) = [[2], [2*\alpha]] + [[2], [max(0, 2*\alpha)]] = [[4], [2*\alpha+max(0, 2*\alpha)]]$
+$Z = Softmax(z_1) = [[exp(4)], [exp(2*\alpha+max(0, 2*\alpha))]]/(exp(4)+exp(2*\alpha+max(0, 2*\alpha)))$
+$z_h = argmax(Z)$, $z_h$ er 0 om $exp(4)>exp(2*\alpha+max(0, 2*\alpha))$,
+ $z_h$ er 1 om $exp(4)<exp(2*\alpha+max(0, 2*\alpha))$
+ Vi ønsker $z_h = 1$, dermed  $exp(4)<exp(2*\alpha+max(0, 2*\alpha))$ =>
+ $4 < 2*\alpha + max(0, 2*\alpha)$. La $\alpha < 0$, da $2*\alpha + max(0, 2*\alpha) = 2*\alpha + 0 < 0 < 4$ La $\alpha > 0$ dermed $2*\alpha + max(0, 2*\alpha) = 4*\alpha > 4 <=> \alpa > 1$.
