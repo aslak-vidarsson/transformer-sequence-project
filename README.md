@@ -1,41 +1,43 @@
 # Project: Transformer Model to Predict Sequences
 
-This project was part of the course "Introduction to Scientific Computations" at NTNU. It was developed by Aslak Vidarsson Homme and Hallstein Olesønn Hagaseth.
+This project was developed as part of the course "Introduction to Scientific Computations" at NTNU by Aslak Vidarsson Homme and Hallstein Olesønn Hagaseth.
 
-## Project Goal
+## Project Highlights
 
-The goal of this project was to implement a transformer model in Python, without using any AI libraries. Only NumPy and Matplotlib were used. The final results are presented in the notebook **FINAL_DRAFT_PROJECT2.ipynb**.
+- Implemented a **transformer model from scratch in Python**, using only **NumPy** and **Matplotlib**—no AI libraries.
+- Tested the model on the following tasks: sorting, addition and generate Shakespeare-like text!
 
-## Methodology
-
-- Implemented key components of a transformer model to predict sequences of numbers.
-- Compared two optimization algorithms: **Steepest Descent** and **Adam**.
-- Trained the networks on 2,500 data points covering all possible sequences of length 5 with two possible values.
-
-## Results
+## Key Results
 
 ### Sequence Sorting
-- Before training: None of the sequences were correctly sorted.  
-- After training with Adam: **99.84%** of sequences were correctly sorted.  
-- After training with Steepest Descent: **1.64%** of sequences were correctly sorted.
+- **Adam optimizer:** 99.84% of sequences correctly sorted.  
+- **Steepest Descent:** 1.64% of sequences correctly sorted.
 
 ### Addition of Two Two-Digit Numbers
-- Adam optimizer quickly converged below the tolerance of 0.01.  
-- Steepest Descent improved gradually but did not reach high accuracy.  
-- Final accuracy:  
-  - Adam: **99.49%**  
-  - Steepest Descent: **0.99%**
+- Adam converged quickly below tolerance and achieved **99.49% accuracy**.  
+- Steepest Descent converged slowly, with **0.99% accuracy**.
 
-These results align with the theory that the Adam optimizer converges faster for certain problems, while Steepest Descent may be more suitable for new or different tasks.
+These results highlight the efficiency of the Adam optimizer and the effectiveness of a from-scratch transformer implementation.
 
-## Technologies Used
+## Additional Experiment: Shakespeare Text Generation
 
-- Python  
-- NumPy  
-- Matplotlib  
-- Jupyter Notebook  
+We also experimented with generating text in the style of Shakespeare.  
+Example output:
+Thou shall nothitite Madyed him; and fack of mece off of his peasing not ficers.
 
-## How to Explore
+CORIOLANUS:
+Nowes day, let the geas!
 
-The full implementation and results are in **FINAL_DRAFT_PROJECT2.ipynb**.  
-No execution is required to understand the results; all code, plots, and analysis are included in the notebook.
+LARTIUS:
+Your none his Nay.
+
+When the noner the say the to stendstall,
+They!
+They thou war
+Mostiong the say none should men: May like set his glet your burave belas!
+That ast, shere should me my foulamm the what drequechare itild afeplers,
+That think mostichen grebshound him: Tis gindeed beas the seas!
+Toold that the rep in say!
+Aufid bleast lep diet her thould cetscest: ay, a 
+
+
