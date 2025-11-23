@@ -1,6 +1,6 @@
 # Project: Transformer Model to Predict Sequences
 
-This project was developed as part of the course "Introduction to Scientific Computations" at NTNU by Aslak Vidarsson Homme and Hallstein Olesønn Hagaseth.
+The results can be found in **FINAL_DRAFT_PROJECT2.ipynb**. This was a two-week project in the course "Introduction to numerical calculations" at NTNU by Aslak Vidarsson Homme and Hallstein Olesønn Hagaseth, both students at NTNU.
 
 ## Project Highlights
 
